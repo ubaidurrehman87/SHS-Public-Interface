@@ -1,50 +1,63 @@
-<div class="ui special cards">
-  <div class="card">
-    <div class="blurring dimmable image">
-      <div class="ui dimmer">
-        <div class="content">
-          <div class="center">
-            <div class="ui inverted button">Add Friend</div>
-          </div>
-        </div>
-      </div>
-      <img src="/images/avatar/large/elliot.jpg">
+<div class="ui link cards">
+            <div class="card">
+                <div class="image">
+                    <div uk-lightbox>
+                        <a href="assets/img/1.jpg"><img src="assets/img/1.jpg" style="width: 290px;height: 225px;"></a>
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+
+                        <div class="header"><b>H#</b></div>
+                        <a href="" class="ui inverted violet d-none d-sm-inline-block icon button circular" style="margin-left: auto;">
+                            <i class="edit outline icon"></i>
+                        </a>
+
+                        <button class="ui inverted red icon button circular" onclick="Delete(@item.ProdId)">
+                            <i class="trash alternate outline icon"></i>
+                        </button>
+                    </div>
+                    <div class="extra">
+                        <b>Address:</b>
+                        <div class="ui star rating" data-rating="4"></div>
+                    </div>
+                    <b>
+                        <div class="meta">
+                            <a>ABC</a>
+                        </div>
+                    </b>
+                    <div class="description">
+                        <div class="ui action input">
+                        
+                            <button (click)="AddtoCart()" class="ui vertical animated green button " tabindex="0" style="width: 100px;text-align: center;padding-left: 35%;margin-left: 80%;">
+                                <div class="hidden content">Want to Buy</div>
+                                <div class="visible content">
+                                    <i class="cart plus icon"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra content">
+                    
+                    <span>
+                        <b>
+                            <i class="user secret alternate icon"></i>
+                            Seller Name :
+                        </b>
+                         My Name
+                    </span>
+                    <br>
+                    <span>
+                        <b>
+                            <i class="envelope alternate icon"></i>
+                            Email :
+                        </b>
+                         My Name
+                    </span>
+
+                </div>
+            </div>
     </div>
-    <div class="content">
-      <a class="header">Team Fu</a>
-      <div class="meta">
-        <span class="date">Created in Sep 2014</span>
-      </div>
-    </div>
-    <div class="extra content">
-      <a>
-        <i class="users icon"></i>
-        2 Members
-      </a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="blurring dimmable image">
-      <div class="ui inverted dimmer">
-        <div class="content">
-          <div class="center">
-            <div class="ui primary button">Add Friend</div>
-          </div>
-        </div>
-      </div>
-      <img src="/images/avatar/large/jenny.jpg">
-    </div>
-    <div class="content">
-      <a class="header">Team Hess</a>
-      <div class="meta">
-        <span class="date">Created in Aug 2014</span>
-      </div>
-    </div>
-    <div class="extra content">
-      <a>
-        <i class="users icon"></i>
-        2 Members
-      </a>
-    </div>
-  </div>
-</div>
