@@ -11,6 +11,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
+import { HomeComponent } from './home/home.component';
+import { AddPropertyComponent } from './Seller/add-property/add-property.component';
+import { AllPropertyComponent } from './Seller/all-property/all-property.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 registerLocaleData(en);
 
@@ -18,7 +22,11 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     PublicInterfaceComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    AddPropertyComponent,
+    AllPropertyComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
