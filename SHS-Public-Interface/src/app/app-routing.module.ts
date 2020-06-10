@@ -11,9 +11,9 @@ import { PublicInterfaceComponent } from './public-interface/public-interface.co
 const routes: Routes = [
   { path : '', component : HomeComponent},
   { path : 'sellerView' , component : PublicInterfaceComponent , pathMatch : 'full'},
-  { path : 'all-Properties' , component : AllPropertyComponent, pathMatch : 'full'},
+  { path : 'properties' , component : AllPropertyComponent, pathMatch : 'full'},
   { path : 'add-Property' , component : AddPropertyComponent, pathMatch : 'full'},
-  { path : '**', component : PageNotFoundComponent}
+  { path : '**', component : AllPropertyComponent}
   // { path : 'addProperty' , component}
 ];
 
